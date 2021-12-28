@@ -14,8 +14,8 @@ contract PrismSale {
         totalSales = 0;
         maxSales = 100;
 
-        owner = 0x62E179D5fCAFbD192FC7e304c8b2030AC5400b1B;
-        charity = 0xe81545a769232Dc4A656adc05Aa439C618F316F5;
+        owner = msg.sender;
+        charity = 0x388e66FFd8bd72DdC0db9a408E0613803B2758Ba;
     }
 
     function canBuy() public view returns (bool) {
